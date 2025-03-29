@@ -1,0 +1,23 @@
+<div class="dashboard">
+  <h1>50 Days of Python Challenges</h1>
+  <nav>
+    <a routerLink="/">Home</a>
+  </nav>
+
+  <div class="days-container">
+    <!-- Day 1 Card -->
+    <div
+      class="day-card"
+      routerLink="/day1"
+      routerLinkActive="active"
+      (click)="onCardClick(1)"
+    >
+      <div class="day-number">Day 1</div>
+      <h3>Personal Information Display</h3>
+      <p>Collect and display user information</p>
+      <div class="difficulty beginner">Beginner</div>
+    </div>
+
+    <!-- Add more day cards as needed -->
+  </div>
+</div>

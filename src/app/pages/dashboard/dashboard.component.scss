@@ -1,0 +1,75 @@
+.dashboard {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    h1 {
+      color: #3f51b5;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    nav {
+      margin-bottom: 30px;
+      a {
+        color: #3f51b5;
+        text-decoration: none;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .days-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+  
+    .day-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 20px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+  
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+  
+      .day-number {
+        background: #3f51b5;
+        color: white;
+        display: inline-block;
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+  
+      h3 {
+        margin: 0 0 10px 0;
+        color: #333;
+      }
+  
+      p {
+        margin: 0 0 15px 0;
+        color: #666;
+      }
+  
+      .difficulty {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: 500;
+  
+        &.beginner {
+          background: #e8f5e9;
+          color: #2e7d32;
+        }
+      }
+    }
+  }

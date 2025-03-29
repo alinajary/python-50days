@@ -1,0 +1,75 @@
+pre {
+    background: #2d2d2d;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    code {
+      color: #f8f8f2;
+      font-family: 'Fira Code', monospace;
+    }
+  }
+  .code-container {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+  }
+  
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+.exercise-container {
+  font-family: 'Vazir', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  
+  [dir="rtl"] {
+    text-align: right;
+    direction: rtl;
+  }
+}
+
+.persian-text {
+  font-family: 'Vazir', 'Tanha', 'Segoe UI', Tahoma;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: #444;
+}
+
+.persian-list {
+  li {
+    margin: 10px 0;
+    padding: 8px 15px;
+    position: relative;
+    
+    &::before {
+      content: "• ";
+      color: #3f51b5;
+      font-size: 1.2em;
+      margin-left: 8px;
+    }
+  }
+}
+
+h2, h3 {
+  font-family: 'Vazir', 'Samim', 'Segoe UI';
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.section-box {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+}
